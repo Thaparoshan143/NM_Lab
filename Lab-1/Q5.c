@@ -2,8 +2,8 @@
 #include<stdlib.h>
 #include<math.h>
 
-#define f(x) (3*x-cos(x)-1)
-#define df(x) (3+sin(x))
+#define f(x) (3*x-1)
+#define df(x) (3)
 
 void seperator()
 {
