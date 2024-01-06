@@ -60,7 +60,7 @@ void displayPoints(Point *target, int count)
 int main()
 {
     int n, i;
-    float sumx = 0, sumy = 0, sumx2 = 0, sumxy = 0, a = 0, b = 0;
+    double sumx = 0, sumy = 0, sumx2 = 0, sumxy = 0, a = 0, b = 0;
 
     Point point[POINTS_SIZE];
     printf("Fitting the straight line y = a + bx using the method of least square\n");
