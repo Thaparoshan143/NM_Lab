@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-// #define f(x) x - (3 * x - sqrt(1 + sin(x))) / (3 - cos(x) / (2 * sqrt(1 + sin(x))))
 #define f(x) x - ((exp(x)+cos(x)-3*x*x)/(exp(x)-sin(x)-6*x))
 
 void seperator(const char symbol, int count)
@@ -39,13 +38,10 @@ void print_table_title()
 
 int main() {
     int step = 1, N;
-    double x0, x1, f1, err;
-    printf("Enter the initial guess (x0) : ");
-    scanf("%lf", &x0);
-    printf("Enter the error tolerance (e) : ");
-    scanf("%lf", &err);
-    printf("Enter the maximum number of iteration (N) : ");
-    scanf("%d", &N);
+    float x0, x1, f1, err;
+    x0 = getFloatInput("Enter the initial guess (x0) : ");
+    err = getFloatInput("Enter the error tolerance (e) : ");
+    N = getIntInput("Enter the maximum number of iteration (N) : ");
 
     print_table_title();
 

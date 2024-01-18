@@ -49,7 +49,7 @@ int main()
 
     Input:
     x0 = getFloatInput("\nEnter the value of lower initial guess : ");
-    x1 = getFloatInput("\nEnter the valie of higher initla guess : ");
+    x1 = getFloatInput("\nEnter the valie of higher inital guess : ");
     err = getFloatInput("\nEnter the value of predefined error : ");
 
     N = getIntInput("Enter the maximum number of iteration : ");
