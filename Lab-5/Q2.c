@@ -32,7 +32,7 @@ int main()
     int n, i, j, k;
     float a[MAT_SIZE][MAT_SIZE], x[MAT_SIZE], ratio, sum;
 
-    print_label("Gauss Elimination Method");
+    print_label("Gauss Jordan Method");
     n = get_int_input("Enter the size of Coefficient matrix A (n) : ");
     print_label("Enter the elements a[i][j] of the agumented matriz [A:C] corresponding to the matrix : ");
 
@@ -46,18 +46,18 @@ int main()
         }
     }
 
-    // Condition of Gauss Elimination
+    // Condition of Gauss Jordan
     for(i=1;i<=n-1;i++)
     {
         if(a[i][i]==0)
         {
-            print_label("Mathematical Error! We cannot apply Gauss Elimination method");
+            print_label("Mathematical Error! We cannot apply Gauss Jordan method");
             print_label("Interchange rows");
             exit(0);
         }
     }
 
-    // Applying the Gauss Elimination
+    // Applying the Gauss Jordan
     for(j=1;j<=n;j++)
     {
         for(i=1;i<=n;i++)
